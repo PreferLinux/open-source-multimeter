@@ -1,3 +1,6 @@
+# FreeCAD backups
+*.fcstd1
+
 # For PCBs designed using KiCAD: http://www.kicad-pcb.org/
 
 # Temporary files
