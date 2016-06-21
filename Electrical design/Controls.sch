@@ -106,10 +106,10 @@ MenuL
 Text Notes 1550 6150 0    60   ~ 0
 Capacitance\nResistance / diode / continuity (select with Range)\nLCR\nVoltage – AC/DC, RMS, DC offset, peaks, frequency, duty cycle\nCurrent, as for voltage\nPower, power factor, voltage, current, much as for voltage (probably can't fit all at once; select connection style with Range)\n\nCould probably auto-detect voltage, current, power, but that conflicts with manual ranging. Power always does though, because it has both current and voltage.\n\nPower has four connection styles, although two are the same from the point of view of power: Current and Common on negative / neutral or on\npositive / live (positive or negative voltage readings, respectively), and Current upstream or downstream of Common for each of the previous two\n(positive or negative current readings, respectively). Combining both negative shows positive power, but negative components unless known.\nCombining one of each shows one component negative, but also shows negative power, unless known. We need to know because negative power\nis very real – the "load" is actually a source, and would be useful for things like batteries where power flows in both directions.\n\nRange +/-: Increase or decrease through possible ranges – probably don't wrap, but not sure yet. Both returns to auto-ranging.\nRel: Relative measurement. For voltage or current, also has long-term max and min – however, they could have problems with a zero reading,\nfor instance when changing measurement terminals.
 $Comp
-L +3.3V #PWR401
+L +3.3V #PWR065
 U 1 1 5747A41F
 P 6350 1700
-F 0 "#PWR401" H 6350 1550 50  0001 C CNN
+F 0 "#PWR065" H 6350 1550 50  0001 C CNN
 F 1 "+3.3V" H 6365 1873 50  0000 C CNN
 F 2 "" H 6350 1700 50  0000 C CNN
 F 3 "" H 6350 1700 50  0000 C CNN
@@ -286,7 +286,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 4050 2700 4050
 Wire Wire Line
-	2750 3650 3000 3650
+	2700 3650 3000 3650
 Wire Wire Line
 	3000 3650 3000 3350
 Wire Wire Line
