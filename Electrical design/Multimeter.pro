@@ -1,4 +1,4 @@
-update=Fri 15 Apr 2016 19:04:36 NZST
+update=Wed 15 Jun 2016 19:47:16 NZST
 version=1
 last_client=kicad
 [pcbnew]
@@ -109,3 +109,4 @@ LibName77=Worldsemi
 LibName78=Xicor
 LibName79=Zilog
 LibName80=/home/karl/KiCad libraries/SSR
+LibName81=/home/karl/KiCad libraries/my parts
