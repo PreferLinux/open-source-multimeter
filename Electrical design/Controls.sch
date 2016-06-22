@@ -87,8 +87,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 5
 Title "Interface inputs"
-Date ""
-Rev ""
+Date "2016-06-22"
+Rev "0.5"
 Comp ""
 Comment1 ""
 Comment2 ""

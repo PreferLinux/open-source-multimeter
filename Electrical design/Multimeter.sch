@@ -87,7 +87,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 5
 Title "Multimeter – Overview"
-Date ""
+Date "2016-06-22"
 Rev "0.5"
 Comp ""
 Comment1 ""
@@ -210,7 +210,7 @@ U 1 1 573D4364
 P 7650 4350
 F 0 "C111" H 7450 4250 50  0000 L CNN
 F 1 "0.01u" H 7550 4450 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 7688 4200 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 7688 4200 50  0001 C CNN
 F 3 "" H 7650 4350 50  0000 C CNN
 	1    7650 4350
 	0    1    1    0   
@@ -221,7 +221,7 @@ U 1 1 573D441B
 P 6900 4350
 F 0 "C110" H 6925 4450 50  0000 L CNN
 F 1 "0.1u" H 6925 4250 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 6938 4200 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 6938 4200 50  0001 C CNN
 F 3 "" H 6900 4350 50  0000 C CNN
 	1    6900 4350
 	0    1    1    0   
@@ -265,7 +265,7 @@ U 1 1 5742E3B2
 P 7650 4050
 F 0 "C107" H 7450 3950 50  0000 L CNN
 F 1 "1u" H 7550 4150 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 7688 3900 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 7688 3900 50  0001 C CNN
 F 3 "" H 7650 4050 50  0000 C CNN
 	1    7650 4050
 	0    1    1    0   
@@ -355,7 +355,7 @@ U 1 1 5749CBBE
 P 14150 7400
 F 0 "C115" V 14050 7550 50  0000 C CNN
 F 1 "10n" V 13989 7400 50  0000 C CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 14188 7250 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 14188 7250 50  0001 C CNN
 F 3 "" H 14150 7400 50  0000 C CNN
 	1    14150 7400
 	0    1    1    0   
@@ -366,7 +366,7 @@ U 1 1 5749CD9A
 P 14150 5800
 F 0 "C114" V 14250 5650 50  0000 C CNN
 F 1 "10n" V 14300 5800 50  0000 C CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 14188 5650 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 14188 5650 50  0001 C CNN
 F 3 "" H 14150 5800 50  0000 C CNN
 	1    14150 5800
 	0    1    1    0   
@@ -421,7 +421,7 @@ U 1 1 574B72D6
 P 950 1200
 F 0 "C102" H 1065 1246 50  0000 L CNN
 F 1 "18p" H 1065 1155 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 988 1050 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 988 1050 50  0001 C CNN
 F 3 "" H 950 1200 50  0000 C CNN
 	1    950  1200
 	0    1    1    0   
@@ -432,7 +432,7 @@ U 1 1 574B72DD
 P 950 700
 F 0 "C101" H 1065 746 50  0000 L CNN
 F 1 "18p" H 1065 655 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 988 550 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 988 550 50  0001 C CNN
 F 3 "" H 950 700 50  0000 C CNN
 	1    950  700 
 	0    1    1    0   
@@ -583,21 +583,10 @@ U 1 1 574E3FA8
 P 2400 9300
 F 0 "C117" H 2425 9400 50  0000 L CNN
 F 1 "0.1u" H 2300 9050 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 2438 9150 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 2438 9150 50  0001 C CNN
 F 3 "" H 2400 9300 50  0000 C CNN
 	1    2400 9300
 	0    -1   1    0   
-$EndComp
-$Comp
-L GNDD #PWR018
-U 1 1 574E415A
-P 2550 9400
-F 0 "#PWR018" H 2550 9150 50  0001 C CNN
-F 1 "GNDD" H 2400 9350 50  0000 C CNN
-F 2 "" H 2550 9400 50  0000 C CNN
-F 3 "" H 2550 9400 50  0000 C CNN
-	1    2550 9400
-	-1   0    0    -1  
 $EndComp
 Entry Wire Line
 	700  8200 800  8300
@@ -821,7 +810,7 @@ U 1 1 5758F335
 P 8300 2050
 F 0 "C103" H 8350 2150 50  0000 L CNN
 F 1 "0.22u" H 8350 1950 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 8338 1900 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 8338 1900 50  0001 C CNN
 F 3 "" H 8300 2050 50  0000 C CNN
 	1    8300 2050
 	1    0    0    -1  
@@ -832,7 +821,7 @@ U 1 1 5758F447
 P 8700 2050
 F 0 "C104" H 8750 2150 50  0000 L CNN
 F 1 "0.22u" H 8750 1950 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 8738 1900 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 8738 1900 50  0001 C CNN
 F 3 "" H 8700 2050 50  0000 C CNN
 	1    8700 2050
 	1    0    0    -1  
@@ -843,7 +832,7 @@ U 1 1 5758F54E
 P 9100 2050
 F 0 "C105" H 9150 2150 50  0000 L CNN
 F 1 "0.22u" H 9150 1950 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 9138 1900 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 9138 1900 50  0001 C CNN
 F 3 "" H 9100 2050 50  0000 C CNN
 	1    9100 2050
 	1    0    0    -1  
@@ -937,7 +926,7 @@ U 1 1 576300E3
 P 7850 3900
 F 0 "C106" H 7750 4000 50  0000 L CNN
 F 1 "1u" H 7850 4150 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 7888 3750 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 7888 3750 50  0001 C CNN
 F 3 "" H 7850 3900 50  0000 C CNN
 	1    7850 3900
 	0    1    1    0   
@@ -948,7 +937,7 @@ U 1 1 5763020B
 P 7850 4200
 F 0 "C112" H 7800 4550 50  0000 L CNN
 F 1 "0.01u" H 7750 4450 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 7888 4050 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 7888 4050 50  0001 C CNN
 F 3 "" H 7850 4200 50  0000 C CNN
 	1    7850 4200
 	0    1    1    0   
@@ -959,7 +948,7 @@ U 1 1 57631F7A
 P 6900 4000
 F 0 "C108" H 6925 4100 50  0000 L CNN
 F 1 "0.1u" H 6700 3900 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 6938 3850 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 6938 3850 50  0001 C CNN
 F 3 "" H 6900 4000 50  0000 C CNN
 	1    6900 4000
 	0    1    1    0   
@@ -970,7 +959,7 @@ U 1 1 57633084
 P 950 5550
 F 0 "C118" H 850 5450 50  0000 L CNN
 F 1 "0.01u" H 850 5650 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 988 5400 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 988 5400 50  0001 C CNN
 F 3 "" H 950 5550 50  0000 C CNN
 	1    950  5550
 	-1   0    0    1   
@@ -981,7 +970,7 @@ U 1 1 576332B5
 P 1150 5550
 F 0 "C119" H 1050 5450 50  0000 L CNN
 F 1 "1u" H 1050 5650 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 1188 5400 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 1188 5400 50  0001 C CNN
 F 3 "" H 1150 5550 50  0000 C CNN
 	1    1150 5550
 	-1   0    0    1   
@@ -992,7 +981,7 @@ U 1 1 57633C60
 P 950 5050
 F 0 "C113" H 850 4950 50  0000 L CNN
 F 1 "0.01u" H 850 5150 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 988 4900 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 988 4900 50  0001 C CNN
 F 3 "" H 950 5050 50  0000 C CNN
 	1    950  5050
 	-1   0    0    1   
@@ -1003,7 +992,7 @@ U 1 1 57633DA3
 P 1150 5050
 F 0 "C116" H 1050 4950 50  0000 L CNN
 F 1 "1u" H 1050 5150 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 1188 4900 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 1188 4900 50  0001 C CNN
 F 3 "" H 1150 5050 50  0000 C CNN
 	1    1150 5050
 	-1   0    0    1   
@@ -1025,7 +1014,7 @@ U 1 1 57637B87
 P 6700 4200
 F 0 "C109" H 6650 4550 50  0000 L CNN
 F 1 "10u" H 6600 4450 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 6738 4050 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to1206_HandSoldering" H 6738 4050 50  0001 C CNN
 F 3 "" H 6700 4200 50  0000 C CNN
 	1    6700 4200
 	0    -1   -1   0   
@@ -1036,7 +1025,7 @@ U 1 1 57638055
 P 800 9850
 F 0 "C121" H 915 9896 50  0000 L CNN
 F 1 "10u" H 915 9805 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 838 9700 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to1206_HandSoldering" H 838 9700 50  0001 C CNN
 F 3 "" H 800 9850 50  0000 C CNN
 	1    800  9850
 	-1   0    0    -1  
@@ -1047,7 +1036,7 @@ U 1 1 57638187
 P 2400 9100
 F 0 "C120" V 2300 9250 50  0000 C CNN
 F 1 "10u" V 2239 9100 50  0000 C CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 2438 8950 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to1206_HandSoldering" H 2438 8950 50  0001 C CNN
 F 3 "" H 2400 9100 50  0000 C CNN
 	1    2400 9100
 	0    1    1    0   
@@ -1522,4 +1511,10 @@ Wire Wire Line
 	12950 4200 12950 5700
 Wire Wire Line
 	12950 5700 12850 5700
+Wire Wire Line
+	2550 9400 3600 9400
+Wire Wire Line
+	3600 9400 3600 10600
+Wire Wire Line
+	3600 10600 2250 10600
 $EndSCHEMATC

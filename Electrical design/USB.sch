@@ -87,8 +87,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 5
 Title "USB and charging"
-Date ""
-Rev ""
+Date "2016-06-22"
+Rev "0.5"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -149,7 +149,7 @@ U 1 1 5748FD48
 P 4650 1600
 F 0 "C501" H 4535 1554 50  0000 R CNN
 F 1 "0.1u" H 4535 1645 50  0000 R CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 4688 1450 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 4688 1450 50  0001 C CNN
 F 3 "" H 4650 1600 50  0000 C CNN
 	1    4650 1600
 	1    0    0    1   
@@ -259,7 +259,7 @@ U 1 1 57638883
 P 3950 4950
 F 0 "C502" H 4065 4996 50  0000 L CNN
 F 1 "10u" H 4065 4905 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 3988 4800 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to1206_HandSoldering" H 3988 4800 50  0001 C CNN
 F 3 "" H 3950 4950 50  0000 C CNN
 	1    3950 4950
 	-1   0    0    -1  
@@ -270,7 +270,7 @@ U 1 1 5763881B
 P 6400 4950
 F 0 "C503" H 6515 4996 50  0000 L CNN
 F 1 "10u" H 6515 4905 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 6438 4800 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to1206_HandSoldering" H 6438 4800 50  0001 C CNN
 F 3 "" H 6400 4950 50  0000 C CNN
 	1    6400 4950
 	1    0    0    -1  

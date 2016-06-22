@@ -87,8 +87,8 @@ $Descr A4 8268 11693 portrait
 encoding utf-8
 Sheet 2 5
 Title "Main I/O"
-Date ""
-Rev ""
+Date "2016-06-22"
+Rev "0.5"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -1410,7 +1410,7 @@ U 1 1 57431E8C
 P 800 10050
 F 0 "C202" H 825 10150 50  0000 L CNN
 F 1 "0.1u" H 825 9950 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 838 9900 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 838 9900 50  0001 C CNN
 F 3 "" H 800 10050 50  0000 C CNN
 	1    800  10050
 	1    0    0    -1  
@@ -1454,7 +1454,7 @@ U 1 1 57380AD6
 P 6050 3600
 F 0 "C201" H 6075 3700 50  0000 L CNN
 F 1 "0.1u" H 6075 3500 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 6088 3450 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 6088 3450 50  0001 C CNN
 F 3 "" H 6050 3600 50  0000 C CNN
 	1    6050 3600
 	0    -1   -1   0   
@@ -1683,7 +1683,7 @@ U 1 1 5763B947
 P 1200 10050
 F 0 "C206" H 1085 10004 50  0000 R CNN
 F 1 "10u" H 1085 10095 50  0000 R CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 1238 9900 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to1206_HandSoldering" H 1238 9900 50  0001 C CNN
 F 3 "" H 1200 10050 50  0000 C CNN
 	1    1200 10050
 	-1   0    0    1   
@@ -1715,7 +1715,7 @@ U 1 1 5763D076
 P 3700 9200
 F 0 "C205" H 3725 9300 50  0000 L CNN
 F 1 "0.1u" H 3725 9100 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 3738 9050 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 3738 9050 50  0001 C CNN
 F 3 "" H 3700 9200 50  0000 C CNN
 	1    3700 9200
 	0    -1   -1   0   
@@ -1737,7 +1737,7 @@ U 1 1 5763DE9B
 P 6050 3250
 F 0 "C204" H 6075 3350 50  0000 L CNN
 F 1 "10u" H 6075 3150 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 6088 3100 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to1206_HandSoldering" H 6088 3100 50  0001 C CNN
 F 3 "" H 6050 3250 50  0000 C CNN
 	1    6050 3250
 	0    -1   -1   0   

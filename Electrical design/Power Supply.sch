@@ -87,8 +87,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 5
 Title "Power supply"
-Date ""
-Rev ""
+Date "2016-06-22"
+Rev "0.5"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -222,7 +222,7 @@ U 1 1 5739C71E
 P 5450 3650
 F 0 "C303" H 5475 3750 50  0000 L CNN
 F 1 "0.1u" H 5475 3550 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 5488 3500 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 5488 3500 50  0001 C CNN
 F 3 "" H 5450 3650 50  0000 C CNN
 	1    5450 3650
 	1    0    0    -1  
@@ -233,7 +233,7 @@ U 1 1 5739C818
 P 8150 3800
 F 0 "C310" H 8175 3900 50  0000 L CNN
 F 1 "0.1u" H 8175 3700 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 8188 3650 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 8188 3650 50  0001 C CNN
 F 3 "" H 8150 3800 50  0000 C CNN
 	1    8150 3800
 	1    0    0    -1  
@@ -244,7 +244,7 @@ U 1 1 5739C87B
 P 7950 3650
 F 0 "C307" H 7975 3750 50  0000 L CNN
 F 1 "0.1u" H 7975 3550 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 7988 3500 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 7988 3500 50  0001 C CNN
 F 3 "" H 7950 3650 50  0000 C CNN
 	1    7950 3650
 	1    0    0    -1  
@@ -255,7 +255,7 @@ U 1 1 5739C8CA
 P 7100 3650
 F 0 "C305" H 7125 3750 50  0000 L CNN
 F 1 "0.1u" H 7125 3550 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 7138 3500 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 7138 3500 50  0001 C CNN
 F 3 "" H 7100 3650 50  0000 C CNN
 	1    7100 3650
 	1    0    0    -1  
@@ -266,7 +266,7 @@ U 1 1 5739C97C
 P 9150 3650
 F 0 "C308" H 9175 3750 50  0000 L CNN
 F 1 "0.01u" H 9175 3550 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 9188 3500 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 9188 3500 50  0001 C CNN
 F 3 "" H 9150 3650 50  0000 C CNN
 	1    9150 3650
 	1    0    0    -1  
@@ -287,7 +287,7 @@ L D_Schottky D303
 U 1 1 5739D188
 P 2950 3350
 F 0 "D303" H 2950 3450 50  0000 C CNN
-F 1 "D_Schottky" H 2950 3250 50  0000 C CNN
+F 1 "D_Schottky" H 2900 3250 50  0000 C CNN
 F 2 "my footprints:SC-90A" H 2950 3350 50  0001 C CNN
 F 3 "" H 2950 3350 50  0000 C CNN
 	1    2950 3350
@@ -325,7 +325,7 @@ U 1 1 57591659
 P 3600 3950
 F 0 "JP301" H 3600 4214 50  0000 C CNN
 F 1 "JUMPER" H 3600 4123 50  0000 C CNN
-F 2 "Resistors_SMD:R_0201" H 3600 3950 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805" H 3600 3950 50  0001 C CNN
 F 3 "" H 3600 3950 50  0000 C CNN
 	1    3600 3950
 	1    0    0    -1  
@@ -336,7 +336,7 @@ U 1 1 57591726
 P 6550 3950
 F 0 "JP302" H 6550 4214 50  0000 C CNN
 F 1 "JUMPER" H 6550 4123 50  0000 C CNN
-F 2 "Resistors_SMD:R_0201" H 6550 3950 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805" H 6550 3950 50  0001 C CNN
 F 3 "" H 6550 3950 50  0000 C CNN
 	1    6550 3950
 	1    0    0    -1  
@@ -382,7 +382,7 @@ U 1 1 576361FE
 P 9400 3650
 F 0 "C309" H 9425 3750 50  0000 L CNN
 F 1 "1u" H 9425 3550 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 9438 3500 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 9438 3500 50  0001 C CNN
 F 3 "" H 9400 3650 50  0000 C CNN
 	1    9400 3650
 	1    0    0    -1  
@@ -393,7 +393,7 @@ U 1 1 57638D26
 P 4250 3650
 F 0 "C301" H 4300 3750 50  0000 L CNN
 F 1 "1u" H 4300 3550 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 4288 3500 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 4288 3500 50  0001 C CNN
 F 3 "" H 4250 3650 50  0000 C CNN
 	1    4250 3650
 	-1   0    0    -1  
@@ -404,7 +404,7 @@ U 1 1 57638DBC
 P 5750 3650
 F 0 "C304" H 5865 3696 50  0000 L CNN
 F 1 "10u" H 5865 3605 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 5788 3500 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to1206_HandSoldering" H 5788 3500 50  0001 C CNN
 F 3 "" H 5750 3650 50  0000 C CNN
 	1    5750 3650
 	1    0    0    -1  
@@ -415,7 +415,7 @@ U 1 1 57638E05
 P 7350 3650
 F 0 "C306" H 7465 3696 50  0000 L CNN
 F 1 "10u" H 7465 3605 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" H 7388 3500 50  0001 C CNN
+F 2 "my footprints:SMDuniversal_0603to1206_HandSoldering" H 7388 3500 50  0001 C CNN
 F 3 "" H 7350 3650 50  0000 C CNN
 	1    7350 3650
 	1    0    0    -1  
@@ -604,30 +604,43 @@ Connection ~ 7600 3350
 $Comp
 L R R303
 U 1 1 5769169A
-P 2300 3800
-F 0 "R303" H 2370 3846 50  0000 L CNN
-F 1 "1M" H 2370 3755 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" V 2230 3800 50  0001 C CNN
-F 3 "" H 2300 3800 50  0000 C CNN
-	1    2300 3800
+P 2500 3800
+F 0 "R303" H 2570 3846 50  0000 L CNN
+F 1 "1M" H 2570 3755 50  0000 L CNN
+F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" V 2430 3800 50  0001 C CNN
+F 3 "" H 2500 3800 50  0000 C CNN
+	1    2500 3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R302
 U 1 1 576916E6
-P 2300 3500
-F 0 "R302" H 2370 3546 50  0000 L CNN
-F 1 "1M" H 2370 3455 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" V 2230 3500 50  0001 C CNN
-F 3 "" H 2300 3500 50  0000 C CNN
-	1    2300 3500
+P 2500 3500
+F 0 "R302" H 2570 3546 50  0000 L CNN
+F 1 "1M" H 2570 3455 50  0000 L CNN
+F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" V 2430 3500 50  0001 C CNN
+F 3 "" H 2500 3500 50  0000 C CNN
+	1    2500 3500
 	1    0    0    -1  
 $EndComp
-Connection ~ 2300 3350
 Connection ~ 2300 3950
-Connection ~ 2300 3650
-Text HLabel 2100 3650 0    60   Output ~ 0
+Connection ~ 2500 3650
+Text HLabel 2050 3650 0    60   Output ~ 0
 +BTsense
 Wire Wire Line
-	2100 3650 2300 3650
+	2050 3650 2500 3650
+$Comp
+L C C302
+U 1 1 576912EA
+P 2300 3800
+F 0 "C302" H 2350 3900 50  0000 L CNN
+F 1 "1u" H 2350 3700 50  0000 L CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 2338 3650 50  0001 C CNN
+F 3 "" H 2300 3800 50  0000 C CNN
+	1    2300 3800
+	-1   0    0    -1  
+$EndComp
+Connection ~ 2300 3650
+Connection ~ 2500 3950
+Connection ~ 2500 3350
 $EndSCHEMATC
