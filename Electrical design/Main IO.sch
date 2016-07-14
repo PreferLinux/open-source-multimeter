@@ -948,7 +948,7 @@ COM
 Text HLabel 3650 9150 2    60   Input ~ 0
 -Vout
 Text Label 2250 2250 0    60   ~ 0
-COM
+COM_D
 $Comp
 L +V_int #PWR202
 U 1 1 5737B363
@@ -1927,4 +1927,6 @@ Wire Wire Line
 	1000 9250 1000 6700
 Connection ~ 1000 9250
 Connection ~ 1000 6700
+Text Label 1000 9100 1    60   ~ 0
+COM_D
 $EndSCHEMATC
