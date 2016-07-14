@@ -87,8 +87,8 @@ $Descr A4 8268 11693 portrait
 encoding utf-8
 Sheet 2 5
 Title "Main I/O"
-Date "2016-07-04"
-Rev "0.7"
+Date "2016-07-14"
+Rev "0.8"
 Comp ""
 Comment1 "Licensed under the GNU GPL v3"
 Comment2 ""
@@ -166,7 +166,7 @@ L R R245
 U 1 1 57371F3A
 P 1150 7850
 F 0 "R245" V 1230 7850 50  0000 C CNN
-F 1 "100k" V 1150 7850 50  0000 C CNN
+F 1 "1M" V 1150 7850 50  0000 C CNN
 F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" V 1080 7850 50  0001 C CNN
 F 3 "" H 1150 7850 50  0000 C CNN
 	1    1150 7850
@@ -177,7 +177,7 @@ L R R246
 U 1 1 57371F41
 P 1150 8250
 F 0 "R246" V 1230 8250 50  0000 C CNN
-F 1 "100k" V 1150 8250 50  0000 C CNN
+F 1 "1M" V 1150 8250 50  0000 C CNN
 F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" V 1080 8250 50  0001 C CNN
 F 3 "" H 1150 8250 50  0000 C CNN
 	1    1150 8250
@@ -794,34 +794,9 @@ Wire Wire Line
 Wire Wire Line
 	5400 5150 5550 5150
 Connection ~ 1950 6300
-Connection ~ 950  8050
-Wire Wire Line
-	950  8000 950  8100
 Wire Wire Line
 	1150 8000 1150 8100
 Connection ~ 1150 8050
-$Comp
-L D_Schottky D211
-U 1 1 57372164
-P 950 7850
-F 0 "D211" H 950 7950 50  0000 C CNN
-F 1 "D_Schottky" H 900 7750 50  0001 C CNN
-F 2 "my footprints:SC-90A" H 950 7850 50  0001 C CNN
-F 3 "" H 950 7850 50  0000 C CNN
-	1    950  7850
-	0    1    1    0   
-$EndComp
-$Comp
-L D_Schottky D212
-U 1 1 5737216B
-P 950 8250
-F 0 "D212" H 950 8350 50  0000 C CNN
-F 1 "D_Schottky" H 1050 8150 50  0001 C CNN
-F 2 "my footprints:SC-90A" H 950 8250 50  0001 C CNN
-F 3 "" H 950 8250 50  0000 C CNN
-	1    950  8250
-	0    1    1    0   
-$EndComp
 $Comp
 L D_Schottky D205
 U 1 1 57372172
@@ -837,8 +812,6 @@ Wire Wire Line
 	1950 4950 1950 7650
 Wire Wire Line
 	1000 6700 1600 6700
-Wire Wire Line
-	950  8050 1450 8050
 Connection ~ 1350 8050
 Connection ~ 1350 6700
 Wire Wire Line
@@ -933,8 +906,6 @@ Wire Wire Line
 	2750 6100 2950 6100
 Wire Wire Line
 	2950 6100 2950 6000
-Wire Wire Line
-	2950 6000 3400 6000
 Text HLabel 5850 5650 2    60   Input ~ 0
 0.02V_Range
 Text HLabel 5850 6000 2    60   Input ~ 0
@@ -977,26 +948,15 @@ Text Label 3100 5450 0    60   ~ 0
 COM
 Text Label 2750 5950 0    60   ~ 0
 COM
-Text HLabel 3400 9500 2    60   Input ~ 0
+Text HLabel 3650 9150 2    60   Input ~ 0
 -Vout
-$Comp
-L GND #PWR206
-U 1 1 573721DD
-P 4150 3650
-F 0 "#PWR206" H 4150 3400 50  0001 C CNN
-F 1 "GND" H 4150 3500 50  0000 C CNN
-F 2 "" H 4150 3650 50  0000 C CNN
-F 3 "" H 4150 3650 50  0000 C CNN
-	1    4150 3650
-	1    0    0    -1  
-$EndComp
 Text Label 2250 2250 0    60   ~ 0
 COM
 $Comp
-L +V_int #PWR202
+L +V_int #PWR031
 U 1 1 5737B363
 P 4150 2850
-F 0 "#PWR202" H 4150 2700 50  0001 C CNN
+F 0 "#PWR031" H 4150 2700 50  0001 C CNN
 F 1 "+V_int" H 4150 2990 50  0000 C CNN
 F 2 "" H 4150 2850 50  0000 C CNN
 F 3 "" H 4150 2850 50  0000 C CNN
@@ -1004,27 +964,14 @@ F 3 "" H 4150 2850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +V_int #PWR209
-U 1 1 5737B88F
-P 950 7700
-F 0 "#PWR209" H 950 7550 50  0001 C CNN
-F 1 "+V_int" H 850 7850 50  0000 C CNN
-F 2 "" H 950 7700 50  0000 C CNN
-F 3 "" H 950 7700 50  0000 C CNN
-	1    950  7700
-	1    0    0    -1  
-$EndComp
-Text Notes 3900 2550 0    60   ~ 0
-+V_int is an intermediate voltage, after the\nbattery but before the voltage regulator.\nIt can rise because any significant clamping\ncurrents are directed to it. It is clamped so it\ndoesn't exceed approximately 4.7 V.
-$Comp
-L VCC #PWR203
+L VCC #PWR032
 U 1 1 5737DBBA
-P 5400 3600
-F 0 "#PWR203" H 5400 3450 50  0001 C CNN
-F 1 "VCC" H 5400 3750 50  0000 C CNN
-F 2 "" H 5400 3600 50  0000 C CNN
-F 3 "" H 5400 3600 50  0000 C CNN
-	1    5400 3600
+P 1850 8250
+F 0 "#PWR032" H 1850 8100 50  0001 C CNN
+F 1 "VCC" H 1850 8400 50  0000 C CNN
+F 2 "" H 1850 8250 50  0000 C CNN
+F 3 "" H 1850 8250 50  0000 C CNN
+	1    1850 8250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1038,8 +985,6 @@ F 3 "" H 5800 4100 50  0000 C CNN
 	1    5800 4100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5400 3600 5900 3600
 $Comp
 L R R209
 U 1 1 573804ED
@@ -1236,10 +1181,10 @@ Wire Wire Line
 Wire Wire Line
 	5500 4000 5400 4000
 $Comp
-L GNDA #PWR213
+L GNDA #PWR033
 U 1 1 573A8247
 P 1150 8400
-F 0 "#PWR213" H 1150 8150 50  0001 C CNN
+F 0 "#PWR033" H 1150 8150 50  0001 C CNN
 F 1 "GNDA" H 1150 8250 50  0000 C CNN
 F 2 "" H 1150 8400 50  0000 C CNN
 F 3 "" H 1150 8400 50  0000 C CNN
@@ -1247,25 +1192,14 @@ F 3 "" H 1150 8400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3VA #PWR210
+L +3.3VA #PWR034
 U 1 1 573A938C
 P 1150 7700
-F 0 "#PWR210" H 1150 7550 50  0001 C CNN
+F 0 "#PWR034" H 1150 7550 50  0001 C CNN
 F 1 "+3.3VA" H 1150 7840 50  0000 C CNN
 F 2 "" H 1150 7700 50  0000 C CNN
 F 3 "" H 1150 7700 50  0000 C CNN
 	1    1150 7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR212
-U 1 1 573AA44A
-P 950 8400
-F 0 "#PWR212" H 950 8150 50  0001 C CNN
-F 1 "GND" H 950 8250 50  0000 C CNN
-F 2 "" H 950 8400 50  0000 C CNN
-F 3 "" H 950 8400 50  0000 C CNN
-	1    950  8400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1284,10 +1218,10 @@ $EndComp
 Wire Wire Line
 	4000 4800 4100 4800
 $Comp
-L GNDD #PWR207
+L GNDD #PWR035
 U 1 1 573ABBA3
 P 1450 3850
-F 0 "#PWR207" H 1450 3600 50  0001 C CNN
+F 0 "#PWR035" H 1450 3600 50  0001 C CNN
 F 1 "GNDD" H 1450 3700 50  0000 C CNN
 F 2 "" H 1450 3850 50  0000 C CNN
 F 3 "" H 1450 3850 50  0000 C CNN
@@ -1295,10 +1229,10 @@ F 3 "" H 1450 3850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR201
+L GNDD #PWR036
 U 1 1 573ABD29
 P 1550 2350
-F 0 "#PWR201" H 1550 2100 50  0001 C CNN
+F 0 "#PWR036" H 1550 2100 50  0001 C CNN
 F 1 "GNDD" H 1550 2200 50  0000 C CNN
 F 2 "" H 1550 2350 50  0000 C CNN
 F 3 "" H 1550 2350 50  0000 C CNN
@@ -1306,10 +1240,10 @@ F 3 "" H 1550 2350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3VA #PWR204
+L +3.3VA #PWR037
 U 1 1 573AE254
 P 5700 3600
-F 0 "#PWR204" H 5700 3450 50  0001 C CNN
+F 0 "#PWR037" H 5700 3450 50  0001 C CNN
 F 1 "+3.3VA" H 5700 3740 50  0000 C CNN
 F 2 "" H 5700 3600 50  0000 C CNN
 F 3 "" H 5700 3600 50  0000 C CNN
@@ -1317,10 +1251,10 @@ F 3 "" H 5700 3600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDA #PWR208
+L GNDA #PWR038
 U 1 1 573AE493
 P 5700 4400
-F 0 "#PWR208" H 5700 4150 50  0001 C CNN
+F 0 "#PWR038" H 5700 4150 50  0001 C CNN
 F 1 "GNDA" H 5700 4250 50  0000 C CNN
 F 2 "" H 5700 4400 50  0000 C CNN
 F 3 "" H 5700 4400 50  0000 C CNN
@@ -1328,10 +1262,10 @@ F 3 "" H 5700 4400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDA #PWR205
+L GNDA #PWR039
 U 1 1 573AE90F
 P 6200 3600
-F 0 "#PWR205" H 6200 3350 50  0001 C CNN
+F 0 "#PWR039" H 6200 3350 50  0001 C CNN
 F 1 "GNDA" H 6200 3450 50  0000 C CNN
 F 2 "" H 6200 3600 50  0000 C CNN
 F 3 "" H 6200 3600 50  0000 C CNN
@@ -1341,25 +1275,14 @@ $EndComp
 Wire Wire Line
 	5800 4400 5800 4700
 $Comp
-L +V_int #PWR211
+L +V_int #PWR040
 U 1 1 573B1087
 P 1650 8250
-F 0 "#PWR211" H 1650 8100 50  0001 C CNN
+F 0 "#PWR040" H 1650 8100 50  0001 C CNN
 F 1 "+V_int" H 1650 8390 50  0000 C CNN
 F 2 "" H 1650 8250 50  0000 C CNN
 F 3 "" H 1650 8250 50  0000 C CNN
 	1    1650 8250
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR214
-U 1 1 573B11AC
-P 1650 9050
-F 0 "#PWR214" H 1650 8800 50  0001 C CNN
-F 1 "GND" H 1650 8900 50  0000 C CNN
-F 2 "" H 1650 9050 50  0000 C CNN
-F 3 "" H 1650 9050 50  0000 C CNN
-	1    1650 9050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1398,7 +1321,7 @@ Wire Wire Line
 	1350 9250 900  9250
 Wire Wire Line
 	900  9350 1500 9350
-Text HLabel 2500 10000 0    60   Input ~ 0
+Text HLabel 2750 9650 0    60   Input ~ 0
 Vout_Enable
 Wire Wire Line
 	1650 9050 1650 8900
@@ -1416,25 +1339,14 @@ F 3 "" H 800 10050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR217
-U 1 1 574320CF
-P 1000 10300
-F 0 "#PWR217" H 1000 10050 50  0001 C CNN
-F 1 "GND" H 1000 10150 50  0000 C CNN
-F 2 "" H 1000 10300 50  0000 C CNN
-F 3 "" H 1000 10300 50  0000 C CNN
-	1    1000 10300
-	1    0    0    -1  
-$EndComp
-$Comp
 L MCP6002 U202
 U 2 1 574B8A10
-P 3100 9600
-F 0 "U202" H 3200 9800 50  0000 L CNN
-F 1 "MCP6002" H 2900 9600 50  0000 L CNN
-F 2 "my footprints:MSOP-8_3x3mm_Pitch0.65mm" H 3000 9650 50  0001 C CNN
-F 3 "" H 3100 9750 50  0000 C CNN
-	2    3100 9600
+P 3350 9250
+F 0 "U202" H 3450 9450 50  0000 L CNN
+F 1 "MCP6002" H 3150 9250 50  0000 L CNN
+F 2 "my footprints:MSOP-8_3x3mm_Pitch0.65mm" H 3250 9300 50  0001 C CNN
+F 3 "" H 3350 9400 50  0000 C CNN
+	2    3350 9250
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1459,7 +1371,6 @@ F 3 "" H 6050 3600 50  0000 C CNN
 	1    6050 3600
 	0    -1   -1   0   
 $EndComp
-Connection ~ 5700 3600
 Wire Wire Line
 	5700 3600 5700 3800
 Wire Wire Line
@@ -1469,7 +1380,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 3850 6150 3850
 Wire Wire Line
-	1500 9350 1500 9600
+	1500 9350 1500 9850
 Text HLabel 6150 3850 2    60   Input ~ 0
 Vout_Enable
 Wire Wire Line
@@ -1477,64 +1388,62 @@ Wire Wire Line
 Wire Wire Line
 	2250 5450 2600 5450
 $Comp
-L Jumper_NC_Small JP203
+L Jumper_NO_Small JP203
 U 1 1 57589CE3
 P 3700 6450
-F 0 "JP203" H 3750 6550 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 3710 6390 50  0001 C CNN
+F 0 "JP203" H 3750 6500 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 3710 6390 50  0001 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 3700 6450 50  0001 C CNN
 F 3 "" H 3700 6450 50  0000 C CNN
 	1    3700 6450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper_NC_Small JP201
+L Jumper_NO_Small JP201
 U 1 1 57589E83
 P 3200 6000
-F 0 "JP201" H 3200 6121 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 3210 5940 50  0001 C CNN
+F 0 "JP201" H 3150 6050 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 3210 5940 50  0001 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 3200 6000 50  0001 C CNN
 F 3 "" H 3200 6000 50  0000 C CNN
 	1    3200 6000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 6000 3300 6000
+	3300 6000 3400 6000
 Wire Wire Line
 	3800 6450 3900 6450
-Wire Wire Line
-	3400 6450 3850 6450
 $Comp
-L Jumper_NO_Small JP202
+L Jumper_NC_Small JP202
 U 1 1 5758ACE4
 P 3500 6150
-F 0 "JP202" H 3500 6200 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 3510 6090 50  0001 C CNN
+F 0 "JP202" H 3700 6200 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 3510 6090 50  0001 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 3500 6150 50  0001 C CNN
 F 3 "" H 3500 6150 50  0000 C CNN
 	1    3500 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper_NO_Small JP204
+L Jumper_NC_Small JP204
 U 1 1 5758AF80
 P 4000 6700
-F 0 "JP204" H 4000 6750 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 4010 6640 50  0001 C CNN
+F 0 "JP204" H 4000 6800 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 4010 6640 50  0001 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 4000 6700 50  0001 C CNN
 F 3 "" H 4000 6700 50  0000 C CNN
 	1    4000 6700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 6150 3350 6150
+	3350 6150 3600 6150
 Wire Wire Line
 	3350 6150 3350 6000
 Connection ~ 3350 6000
 Wire Wire Line
 	3600 6150 3600 6450
 Wire Wire Line
-	3900 6700 3850 6700
+	3850 6700 6700 6700
 Wire Wire Line
 	3850 6700 3850 6450
 Connection ~ 3850 6450
@@ -1550,8 +1459,6 @@ F 3 "" H 5200 6500 50  0000 C CNN
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	4100 6700 6700 6700
-Wire Wire Line
 	6700 6700 6700 6350
 Wire Wire Line
 	6700 6350 5850 6350
@@ -1559,12 +1466,12 @@ Connection ~ 5050 6150
 Text HLabel 5850 6500 2    60   Output ~ 0
 COMMON
 Wire Wire Line
-	2800 9600 2800 9950
+	3050 9250 3050 9600
 Wire Wire Line
-	2800 9950 3400 9950
+	3050 9600 3650 9600
 Wire Wire Line
-	3400 9950 3400 9700
-Connection ~ 2800 9600
+	3650 9600 3650 9350
+Connection ~ 3050 9250
 Wire Wire Line
 	5150 3350 5150 3650
 Wire Wire Line
@@ -1573,27 +1480,27 @@ Wire Wire Line
 	4550 3650 4550 3250
 Connection ~ 4550 3250
 $Comp
-L GNDA #PWR218
+L GNDA #PWR041
 U 1 1 5758E3FF
-P 3200 10500
-F 0 "#PWR218" H 3200 10250 50  0001 C CNN
-F 1 "GNDA" H 3200 10350 50  0000 C CNN
-F 2 "" H 3200 10500 50  0000 C CNN
-F 3 "" H 3200 10500 50  0000 C CNN
-	1    3200 10500
+P 3450 10150
+F 0 "#PWR041" H 3450 9900 50  0001 C CNN
+F 1 "GNDA" H 3450 10000 50  0000 C CNN
+F 2 "" H 3450 10150 50  0000 C CNN
+F 3 "" H 3450 10150 50  0000 C CNN
+	1    3450 10150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 9900 3200 10100
+	3450 9550 3450 9750
 $Comp
-L +3.3VA #PWR215
+L +3.3VA #PWR042
 U 1 1 5758E968
-P 3200 9100
-F 0 "#PWR215" H 3200 8950 50  0001 C CNN
-F 1 "+3.3VA" H 3200 9240 50  0000 C CNN
-F 2 "" H 3200 9100 50  0000 C CNN
-F 3 "" H 3200 9100 50  0000 C CNN
-	1    3200 9100
+P 3450 8750
+F 0 "#PWR042" H 3450 8600 50  0001 C CNN
+F 1 "+3.3VA" H 3450 8890 50  0000 C CNN
+F 2 "" H 3450 8750 50  0000 C CNN
+F 3 "" H 3450 8750 50  0000 C CNN
+	1    3450 8750
 	1    0    0    -1  
 $EndComp
 Connection ~ 2450 7100
@@ -1612,21 +1519,19 @@ Connection ~ 2750 6700
 Connection ~ 2750 6500
 Connection ~ 2450 6500
 Connection ~ 2450 6700
-Text HLabel 2900 10300 0    60   Input ~ 0
+Text HLabel 3150 9950 0    60   Input ~ 0
 Vout_Enable
-Text Notes 3100 8500 0    60   ~ 0
-The bottom set of jumpers allows switching the 2 V range between attenuation\nand amplification, and the top set allows switching the 20 V range to use the\nresistor string of the 2 V range when the 2 V range is set for amplification.\n\nThe unspecified resistor values above should be calculated using the spreadsheet\n"voltage divider values.ods" to be optimised for resolution of the primary ADC.\n\nThe op-amp models here are not actually important, just some of their characteristics.\nThe four input op-amps (and the in-amp) need to be fairly low noise,\notherwise it'll show up in the output – the Vin op-amp is probably least\nimportant in this regard as it is only used on higher voltage ranges.\nThe Vin amplifier especially needs a very low bias current due to a 10M input resistance.\nThe initial LV amp also needs to have a fairly low bias current.\nThe output op-amps need to be able to drive a capacitive load via a\n1.8 – 2 k ohm resistance, which most should – and they also need to\nsurvive being shorted temporarily.\nThe other two aren't particularly critical.
-Connection ~ 3600 6450
-Connection ~ 3100 6000
+Text Notes 3100 8550 0    60   ~ 0
+The bottom set of jumpers allows switching the 2 V range between attenuation\nand amplification, and the top set allows switching the 20 V range to use the\nresistor string of the 2 V range when the 2 V range is set for amplification.\nCurrently the 2 V range is used for amplification, and the 20 V range uses the long string.\n\nThe unspecified resistor values above should be calculated using the spreadsheet\n"voltage divider values.ods" to be optimised for resolution of the primary ADC.\n\nThe op-amp models here are not actually important, just some of their characteristics.\nThe four input op-amps (and the in-amp) need to be fairly low noise,\notherwise it'll show up in the output – the Vin op-amp is probably least\nimportant in this regard as it is only used on higher voltage ranges.\nThe Vin amplifier especially needs a very low bias current due to a 10M input resistance.\nThe initial LV amp also needs to have a low bias current, as well as being able to\nhandle an input current of at least 10 mA.\nThe output op-amps need to be able to drive a capacitive load via a\n1.8 – 2 k ohm resistance, which most should – and they also need to\nsurvive being shorted temporarily.\nThe other two aren't particularly critical.
 $Comp
 L Q_NMOS_GSD Q201
 U 1 1 575FA6CD
-P 3100 10300
-F 0 "Q201" H 3291 10346 50  0000 L CNN
-F 1 "Q_NMOS_GSD" H 3300 10450 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 3300 10400 50  0001 C CNN
-F 3 "" H 3100 10300 50  0000 C CNN
-	1    3100 10300
+P 3350 9950
+F 0 "Q201" H 3541 9996 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 3550 10100 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3550 10050 50  0001 C CNN
+F 3 "" H 3350 9950 50  0000 C CNN
+	1    3350 9950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1634,7 +1539,7 @@ L R R247
 U 1 1 575FCF43
 P 4400 3250
 F 0 "R247" V 4480 3250 50  0000 C CNN
-F 1 "22R" V 4400 3250 50  0000 C CNN
+F 1 "68R" V 4400 3250 50  0000 C CNN
 F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" V 4330 3250 50  0001 C CNN
 F 3 "" H 4400 3250 50  0000 C CNN
 	1    4400 3250
@@ -1657,26 +1562,24 @@ Wire Wire Line
 $Comp
 L R R248
 U 1 1 575FF3B9
-P 1750 9600
-F 0 "R248" V 1830 9600 50  0000 C CNN
-F 1 "22R" V 1750 9600 50  0000 C CNN
-F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" V 1680 9600 50  0001 C CNN
-F 3 "" H 1750 9600 50  0000 C CNN
-	1    1750 9600
+P 2600 9250
+F 0 "R248" V 2680 9250 50  0000 C CNN
+F 1 "68R" V 2600 9250 50  0000 C CNN
+F 2 "my footprints:SMDuniversal_0603to1210_HandSoldering" V 2530 9250 50  0001 C CNN
+F 3 "" H 2600 9250 50  0000 C CNN
+	1    2600 9250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2500 10000 2600 10000
+	2750 9650 2850 9650
 Wire Wire Line
-	2600 10000 2600 9750
+	2850 9650 2850 9400
 Wire Wire Line
-	2600 9750 2500 9750
+	2850 9400 2450 9400
 Wire Wire Line
-	1900 9600 2000 9600
+	1500 9850 1950 9850
 Wire Wire Line
-	1500 9600 1600 9600
-Wire Wire Line
-	2500 9600 2800 9600
+	2750 9250 3050 9250
 $Comp
 L C C206
 U 1 1 5763B947
@@ -1689,10 +1592,10 @@ F 3 "" H 1200 10050 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +V_int #PWR216
+L +V_int #PWR043
 U 1 1 5763C611
 P 1000 9800
-F 0 "#PWR216" H 1000 9650 50  0001 C CNN
+F 0 "#PWR043" H 1000 9650 50  0001 C CNN
 F 1 "+V_int" H 1000 9940 50  0000 C CNN
 F 2 "" H 1000 9800 50  0000 C CNN
 F 3 "" H 1000 9800 50  0000 C CNN
@@ -1712,17 +1615,17 @@ Connection ~ 1000 9900
 $Comp
 L C C205
 U 1 1 5763D076
-P 3700 9200
-F 0 "C205" H 3725 9300 50  0000 L CNN
-F 1 "0.1u" H 3725 9100 50  0000 L CNN
-F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 3738 9050 50  0001 C CNN
-F 3 "" H 3700 9200 50  0000 C CNN
-	1    3700 9200
+P 3950 8850
+F 0 "C205" H 3975 8950 50  0000 L CNN
+F 1 "0.1u" H 3975 8750 50  0000 L CNN
+F 2 "my footprints:SMDuniversal_0603to0805_HandSoldering" H 3988 8700 50  0001 C CNN
+F 3 "" H 3950 8850 50  0000 C CNN
+	1    3950 8850
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3200 9200 3550 9200
-Connection ~ 3200 9200
+	3450 8850 3800 8850
+Connection ~ 3450 8850
 Connection ~ 6200 3600
 Connection ~ 5850 3600
 Wire Wire Line
@@ -1743,32 +1646,32 @@ F 3 "" H 6050 3250 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3850 9200 3850 10000
+	4100 8850 4100 9650
 Wire Wire Line
-	3200 9100 3200 9300
+	3450 8750 3450 8950
 Wire Wire Line
-	3850 10000 3200 10000
-Connection ~ 3200 10000
+	4100 9650 3450 9650
+Connection ~ 3450 9650
 $Comp
-L PWR_FLAG #FLG201
+L PWR_FLAG #FLG044
 U 1 1 5767CED2
-P 3200 10000
-F 0 "#FLG201" H 3200 10095 50  0001 C CNN
-F 1 "PWR_FLAG" V 3200 10178 50  0000 L CNN
-F 2 "" H 3200 10000 50  0000 C CNN
-F 3 "" H 3200 10000 50  0000 C CNN
-	1    3200 10000
+P 3450 9650
+F 0 "#FLG044" H 3450 9745 50  0001 C CNN
+F 1 "PWR_FLAG" V 3450 9828 50  0000 L CNN
+F 2 "" H 3450 9650 50  0000 C CNN
+F 3 "" H 3450 9650 50  0000 C CNN
+	1    3450 9650
 	0    -1   -1   0   
 $EndComp
 $Comp
 L 74LVC1G66_GNDA U218
 U 1 1 5768030E
-P 2250 9600
-F 0 "U218" H 2250 9824 50  0000 C CNN
-F 1 "74LVC1G66 GNDA" H 2250 9825 50  0001 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-353" H 2250 9600 50  0001 C CNN
-F 3 "" H 2250 9600 50  0000 C CNN
-	1    2250 9600
+P 2200 9250
+F 0 "U218" H 2200 9474 50  0000 C CNN
+F 1 "74LVC1G66 GNDA" H 2200 9475 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-353" H 2200 9250 50  0001 C CNN
+F 3 "" H 2200 9250 50  0000 C CNN
+	1    2200 9250
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1907,4 +1810,105 @@ Wire Wire Line
 	1350 3300 1350 3550
 Connection ~ 1350 3550
 Connection ~ 1350 3300
+Connection ~ 1750 9850
+Wire Wire Line
+	1750 9800 1750 9900
+$Comp
+L D_Schottky D213
+U 1 1 57834872
+P 1750 9650
+F 0 "D213" H 1750 9750 50  0000 C CNN
+F 1 "D_Schottky" H 1700 9550 50  0001 C CNN
+F 2 "my footprints:SC-90A" H 1750 9650 50  0001 C CNN
+F 3 "" H 1750 9650 50  0000 C CNN
+	1    1750 9650
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky D214
+U 1 1 57834879
+P 1750 10050
+F 0 "D214" H 1750 10150 50  0000 C CNN
+F 1 "D_Schottky" H 1850 9950 50  0001 C CNN
+F 2 "my footprints:SC-90A" H 1750 10050 50  0001 C CNN
+F 3 "" H 1750 10050 50  0000 C CNN
+	1    1750 10050
+	0    1    1    0   
+$EndComp
+$Comp
+L +V_int #PWR045
+U 1 1 57834881
+P 1750 9500
+F 0 "#PWR045" H 1750 9350 50  0001 C CNN
+F 1 "+V_int" H 1650 9650 50  0000 C CNN
+F 2 "" H 1750 9500 50  0000 C CNN
+F 3 "" H 1750 9500 50  0000 C CNN
+	1    1750 9500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 9850 1950 9250
+Wire Wire Line
+	2950 6000 3100 6000
+Wire Wire Line
+	3600 6450 3400 6450
+Connection ~ 3600 6450
+Connection ~ 3400 6150
+Connection ~ 4100 6700
+Connection ~ 3900 6700
+Connection ~ 3600 6150
+$Comp
+L GNDA #PWR046
+U 1 1 578831A0
+P 1750 10200
+F 0 "#PWR046" H 1750 9950 50  0001 C CNN
+F 1 "GNDA" H 1750 10050 50  0000 C CNN
+F 2 "" H 1750 10200 50  0000 C CNN
+F 3 "" H 1750 10200 50  0000 C CNN
+	1    1750 10200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR047
+U 1 1 578832E3
+P 1000 10300
+F 0 "#PWR047" H 1000 10050 50  0001 C CNN
+F 1 "GNDA" H 1000 10150 50  0000 C CNN
+F 2 "" H 1000 10300 50  0000 C CNN
+F 3 "" H 1000 10300 50  0000 C CNN
+	1    1000 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR048
+U 1 1 57883879
+P 4150 3650
+F 0 "#PWR048" H 4150 3400 50  0001 C CNN
+F 1 "GNDA" H 4150 3500 50  0000 C CNN
+F 2 "" H 4150 3650 50  0000 C CNN
+F 3 "" H 4150 3650 50  0000 C CNN
+	1    4150 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR049
+U 1 1 57884EE1
+P 1650 9050
+F 0 "#PWR049" H 1650 8800 50  0001 C CNN
+F 1 "GNDA" H 1650 8900 50  0000 C CNN
+F 2 "" H 1650 9050 50  0000 C CNN
+F 3 "" H 1650 9050 50  0000 C CNN
+	1    1650 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 8250 1850 8300
+Wire Wire Line
+	1850 8300 1650 8300
+Connection ~ 1650 8300
+Wire Wire Line
+	5700 3600 5900 3600
+Connection ~ 5700 3600
+Wire Wire Line
+	1150 8050 1450 8050
 $EndSCHEMATC
