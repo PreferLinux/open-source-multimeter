@@ -87,8 +87,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 5
 Title "Multimeter – Overview"
-Date "2016-07-14"
-Rev "0.8"
+Date "2016-08-15"
+Rev "0.9"
 Comp ""
 Comment1 "Licensed under the GNU GPL v3"
 Comment2 ""
@@ -894,17 +894,6 @@ F 3 "" H 950 3050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR107
-U 1 1 576110F8
-P 950 2600
-F 0 "#PWR107" H 950 2450 50  0001 C CNN
-F 1 "+3.3V" H 965 2773 50  0000 C CNN
-F 2 "" H 950 2600 50  0000 C CNN
-F 3 "" H 950 2600 50  0000 C CNN
-	1    950  2600
-	1    0    0    -1  
-$EndComp
-$Comp
 L GNDD #PWR110
 U 1 1 5761132F
 P 950 3500
@@ -1614,4 +1603,15 @@ Wire Wire Line
 	13650 2100 13650 8300
 Connection ~ 8600 2200
 Connection ~ 9000 2100
+$Comp
+L +BATT #PWR?
+U 1 1 57B0FC16
+P 950 2600
+F 0 "#PWR?" H 950 2450 50  0001 C CNN
+F 1 "+BATT" H 965 2773 50  0000 C CNN
+F 2 "" H 950 2600 50  0000 C CNN
+F 3 "" H 950 2600 50  0000 C CNN
+	1    950  2600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
