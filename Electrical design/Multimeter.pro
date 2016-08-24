@@ -1,4 +1,4 @@
-update=Wed 15 Jun 2016 19:47:16 NZST
+update=Thu 25 Aug 2016 11:08:12 NZST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../../KiCad libraries
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -108,5 +108,5 @@ LibName76=video
 LibName77=Worldsemi
 LibName78=Xicor
 LibName79=Zilog
-LibName80=/home/karl/KiCad libraries/SSR
-LibName81=/home/karl/KiCad libraries/my parts
+LibName80=my parts
+LibName81=SSR
